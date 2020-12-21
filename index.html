@@ -2,63 +2,71 @@
 <html>
 <head>
 	<title>First webpage</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scal=1">
 </head>
 <body>
-	<div>
-		<img src="images\me.jpg" width="150" height="150" />
-		<h1>John Hughes </h1>
-		<h3>Web Developer At Hughes Software Services</h3>
-		<p>{{ Pause and ponder}}</p>
-	</div>
-	<div>
-		<div>
-			<h3>I am</h3>
-			<ul>
-				<li>An engineer</li>
-				<li>A reader</li>
-				<li>A Maker</li>
-			</ul>
+	<div class="container">
+		<div class="intro">
+			<img src="images\me.jpg" width="150" height="150" />
+			<h1>John Hughes </h1>
+			<h3>Web Developer At Hughes Software Services</h3>
+			<p class="quote">{{ Pause and ponder}}</p>
+		</div>
+		<div class="about-grid">
+			<div class="i-am">
+				<h3>I am</h3>
+				<ul class="about-list">
+					<li>An engineer</li>
+					<li>A reader</li>
+					<li>A Maker</li>
+				</ul>
+			</div>
+			<div class="i-like">
+				<h3>I like to</h3>
+				<ul class="about-list">
+					<li>Program</li>
+					<li>Make things</li>
+					<li>Play with my grandchildren</li>
+				</ul>
+			</div>
 		</div>
 		<div>
-			<h3>I like to</h3>
-			<ul>
-				<li>Program</li>
-				<li>Make things</li>
-				<li>Play with my grandchildren</li>
-			</ul>
+			<h3 class="projects-heading">My Projects</h3>
+			<div class="projects-grid">
+				<img class="project-image" src="images\camero.jpg" width="300" height="300"/>
+				<img class="project-image" src="images\bullets.jpg" width="300" height="300"/>
+				<img class="project-image" src="images\fibers.jpg" width="300" height="300"/>
+				<img class="project-image" src="images\christmas.jpg" width="300" height="300"/>
+			</div>
 		</div>
-	</div>
-	<div>
-		<h3>My Projects</h3>
-		<img src="images\camero.jpg" width="300" height="300"/>
-		<img src="images\bullets.jpg" width="300" height="300"/>
-		<img src="images\fibers.jpg" width="300" height="300"/>
-		<img src="images\christmas.jpg" width="300" height="300"/>
-	</div>
-	<div>
-		<h3>Links</h3>
-		<ul>
-			<li>
-				<a href="https://github.com/codeninja481">Github</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/JEHughesJr">Twitter</a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/john-hughes-72735b16/">LinkedIn</a>
-			</li>
-		</ul>
-	</div>
-	<div>
-		<form action="#">
-			<label for="email">
-				Email: <input type="email" id="email" placeholder="Enter your email">
-			</label>
-			<label>
-				Message: <textarea id="message">Your Message</textarea>
-			</label>
-			<input type="Submit" valid="Send Message">
-		</form>
+		<div class="links-and-contact">
+			<div class="links">
+				<h3>Links</h3>
+				<ul class="links-list">
+					<li>
+						<a href="https://github.com/codeninja481">Github</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/JEHughesJr">Twitter</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/john-hughes-72735b16/">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<form action="#">
+					<label for="email">
+						Email: <input type="email" id="email" placeholder="Enter your email">
+					</label>
+					<label>
+						Message: <textarea id="message">Your Message</textarea>
+					</label>
+					<input type="Submit" valid="Send Message">
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
