@@ -3,16 +3,20 @@
 <head>
 	<title>First webpage</title>
 	<link rel="stylesheet" href="styles.css">
-	<meta name="viewport" content="width=device-width, initial-scal=1">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class="container">
 		<div class="intro">
-			<img src="images\me.jpg" width="150" height="150" />
+			<img class="profile-picture" src="images\me.jpg"/>
 			<h1>John Hughes </h1>
 			<h3>Web Developer At Hughes Software Services</h3>
 			<p class="quote">{{ Pause and ponder}}</p>
 		</div>
+
+		<hr>
+
 		<div class="about-grid">
 			<div class="i-am">
 				<h3>I am</h3>
@@ -31,15 +35,33 @@
 				</ul>
 			</div>
 		</div>
+
+		<hr>
+
 		<div>
 			<h3 class="projects-heading">My Projects</h3>
 			<div class="projects-grid">
-				<img class="project-image" src="images\camero.jpg" width="300" height="300"/>
-				<img class="project-image" src="images\bullets.jpg" width="300" height="300"/>
-				<img class="project-image" src="images\fibers.jpg" width="300" height="300"/>
-				<img class="project-image" src="images\christmas.jpg" width="300" height="300"/>
+				<div class="project-image-wrapper">
+					<h4>Project 1 </h4>
+					<img class="project-image" src="images\project-1.jpg"/>
+				</div>
+				<div class="project-image-wrapper">
+					<h4>Project 2 </h4>
+					<img class="project-image" src="images\project-2.jpg"/>
+				</div>
+				<div class="project-image-wrapper">
+					<h4>Project 3 </h4>
+					<img class="project-image" src="images\project-3.jpg"/>
+				</div>
+				<div class="project-image-wrapper">
+					<h4>Project 4 </h4>
+					<img class="project-image" src="images\project-4.jpg"/>
+				</div>
 			</div>
 		</div>
+
+		<hr>
+		
 		<div class="links-and-contact">
 			<div class="links">
 				<h3>Links</h3>
@@ -58,12 +80,16 @@
 			<div>
 				<form action="#">
 					<label for="email">
-						Email: <input type="email" id="email" placeholder="Enter your email">
+						<h4>Email</h4>
+						<input type="email" id="email" placeholder="Enter your email">
 					</label>
-					<label>
-						Message: <textarea id="message">Your Message</textarea>
+					<label for="message">
+						<h4>Message</h4>
+						<textarea id="message">Your Message</textarea>
 					</label>
-					<input type="Submit" valid="Send Message">
+					<div class="submit-button-wrapper">
+						<input type="Submit" valid="Send Message">
+					</div>
 				</form>
 			</div>
 		</div>
