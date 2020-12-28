@@ -54,6 +54,12 @@ function clickListener(event)
 		console.log('The email address must contain @');
 		return false;
 	}
+
+	if(validateNSFW(messageText) === true){
+		console.log('The message is NSFW');
+		return false;		
+	}
+	
 	console.log('Thanks for your message');
 }
 
@@ -62,6 +68,18 @@ submitButton.addEventListener('click', clickListener);
 function emailValidate(email)
 {
 	if(email.includes('@'))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function validateNSFW(messageText)
+{
+	if(messageText.includes('crap'))
 	{
 		return true;
 	}
