@@ -1,4 +1,4 @@
-# hello-world
+# Web Development For Beginners
 My first repository
 
-John here, just trying to get a feel for GitHub.
+This is the repository for the Web Development For Beginners short course from careerfoundry.com.
